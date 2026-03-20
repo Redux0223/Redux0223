@@ -156,8 +156,20 @@
 
 ## `> neofetch`
 
+```
+ Redux0223@GitHub
+ ─────────────────────
+ OS       : Developer (AI Agent Specialist)
+ Repos    : 17
+ PRs      : 104
+ Contrib  : 230+ this year
+ Projects : 12 repos contributed
+ Lang     : Python · TypeScript · JavaScript
+ Uptime   : Since 2023
+```
+
 <div align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=Redux0223&show_icons=true&hide_border=true&bg_color=E4E9F0&title_color=6366F1&icon_color=00E5FF&text_color=374151&ring_color=39FF14" alt="GitHub Stats"/>
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=Redux0223&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=E4E9F0&title_color=6366F1&icon_color=00E5FF&text_color=374151&ring_color=39FF14" alt="GitHub Stats"/>
   &nbsp;
   <img width="48%" src="https://streak-stats.demolab.com/?user=Redux0223&hide_border=true&background=E4E9F0&ring=39FF14&fire=FFD93D&currStreakLabel=6366F1&sideLabels=374151&currStreakNum=374151&sideNums=374151&dates=9CA3AF" alt="Streak Stats"/>
 </div>
@@ -165,7 +177,7 @@
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Redux0223&layout=compact&hide_border=true&bg_color=E4E9F0&title_color=6366F1&text_color=374151&langs_count=8" width="42%" alt="Top Languages"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Redux0223&layout=compact&hide_border=true&bg_color=E4E9F0&title_color=6366F1&text_color=374151&langs_count=8&include_all_commits=true&count_private=true" width="42%" alt="Top Languages"/>
 </div>
 
 <br/>
