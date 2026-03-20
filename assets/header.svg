@@ -1,0 +1,135 @@
+<svg width="850" height="280" viewBox="0 0 850 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Neumorphic shadow for outer frame -->
+    <filter id="neu" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="6" dy="6" stdDeviation="8" flood-color="#A3B1C6" flood-opacity="0.45"/>
+      <feDropShadow dx="-4" dy="-4" stdDeviation="8" flood-color="#FFFFFF" flood-opacity="0.85"/>
+    </filter>
+    <!-- CRT glow for screen text -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Scanline pattern -->
+    <pattern id="scanlines" patternUnits="userSpaceOnUse" width="2" height="4">
+      <rect width="2" height="2" fill="rgba(0,0,0,0.08)"/>
+    </pattern>
+    <!-- Pixel grid -->
+    <pattern id="pixelgrid" patternUnits="userSpaceOnUse" width="8" height="8">
+      <rect width="8" height="8" fill="none" stroke="rgba(0,229,255,0.03)" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Outer neumorphic frame -->
+  <rect x="10" y="10" width="830" height="260" rx="20" fill="#E4E9F0" filter="url(#neu)"/>
+
+  <!-- Screen bezel -->
+  <rect x="30" y="24" width="790" height="210" rx="6" fill="#1A1A2E"/>
+
+  <!-- Inner screen -->
+  <rect x="34" y="28" width="782" height="202" rx="4" fill="#0C1222"/>
+
+  <!-- Pixel grid overlay -->
+  <rect x="34" y="28" width="782" height="202" rx="4" fill="url(#pixelgrid)"/>
+
+  <!-- Scanline overlay -->
+  <rect x="34" y="28" width="782" height="202" rx="4" fill="url(#scanlines)"/>
+
+  <!-- Pixel art: small computer icon (8x8 pixel blocks) -->
+  <g transform="translate(56, 48)" filter="url(#glow)">
+    <!-- Monitor -->
+    <rect x="0" y="0" width="32" height="24" rx="2" fill="none" stroke="#00E5FF" stroke-width="2"/>
+    <rect x="4" y="4" width="24" height="16" fill="#00E5FF" opacity="0.15"/>
+    <!-- Stand -->
+    <rect x="12" y="24" width="8" height="4" fill="#00E5FF"/>
+    <rect x="6" y="28" width="20" height="3" fill="#00E5FF"/>
+    <!-- Cursor on mini screen -->
+    <rect x="8" y="8" width="4" height="6" fill="#00E5FF">
+      <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Line 1: system boot text -->
+  <text x="104" y="62" filter="url(#glow)" font-family="ui-monospace, 'SF Mono', 'Courier New', monospace" font-size="11" fill="#3A7A5E" letter-spacing="1">SYSTEM BOOT v2.0.23 .................. OK</text>
+
+  <!-- Line 2: greeting -->
+  <text y="92" filter="url(#glow)" font-family="ui-monospace, 'SF Mono', 'Courier New', monospace" font-size="13" letter-spacing="1.5">
+    <tspan x="56" fill="#39FF14">&gt;</tspan>
+    <tspan dx="8" fill="#00E5FF">HELLO WORLD,</tspan>
+    <tspan dx="6" fill="#E0E0E0">I'M</tspan>
+    <tspan dx="6" fill="#FFD93D" font-weight="bold">REDUX0223</tspan>
+  </text>
+
+  <!-- Line 3: real name + title -->
+  <text y="118" filter="url(#glow)" font-family="ui-monospace, 'SF Mono', 'Courier New', monospace" font-size="13" letter-spacing="1.5">
+    <tspan x="56" fill="#39FF14">&gt;</tspan>
+    <tspan dx="8" fill="#FF6B9D">&#21016;&#20581;&#26032;</tspan>
+    <tspan dx="6" fill="#6E7681">|</tspan>
+    <tspan dx="6" fill="#00E5FF">AI AGENT DEVELOPER</tspan>
+    <tspan dx="6" fill="#6E7681">|</tspan>
+    <tspan dx="6" fill="#BD93F9">FULL-STACK ENGINEER</tspan>
+  </text>
+
+  <!-- Line 4: university -->
+  <text y="146" filter="url(#glow)" font-family="ui-monospace, 'SF Mono', 'Courier New', monospace" font-size="13" letter-spacing="1.5">
+    <tspan x="56" fill="#39FF14">&gt;</tspan>
+    <tspan dx="8" fill="#8B949E">SCNU</tspan>
+    <tspan dx="4" fill="#6E7681">::</tspan>
+    <tspan dx="4" fill="#E0E0E0">Big Data Management &amp; Application</tspan>
+  </text>
+
+  <!-- Line 5: stats bar -->
+  <text y="174" filter="url(#glow)" font-family="ui-monospace, 'SF Mono', 'Courier New', monospace" font-size="12" letter-spacing="1">
+    <tspan x="56" fill="#39FF14">&gt;</tspan>
+    <tspan dx="8" fill="#FFD93D">[PYTHON]</tspan>
+    <tspan dx="4" fill="#00E5FF">[TYPESCRIPT]</tspan>
+    <tspan dx="4" fill="#FF6B9D">[LANGCHAIN]</tspan>
+    <tspan dx="4" fill="#BD93F9">[MCP]</tspan>
+    <tspan dx="4" fill="#39FF14">[CLAUDE SDK]</tspan>
+  </text>
+
+  <!-- Line 6: prompt with blinking cursor -->
+  <text y="202" filter="url(#glow)" font-family="ui-monospace, 'SF Mono', 'Courier New', monospace" font-size="13" letter-spacing="1.5">
+    <tspan x="56" fill="#39FF14">&gt;</tspan>
+    <tspan dx="8" fill="#8B949E">Building intelligent agents...</tspan>
+  </text>
+  <rect x="340" y="190" width="8" height="16" rx="1" fill="#39FF14">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.501;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Pixel art decorations: small stars -->
+  <g filter="url(#glow)" opacity="0.6">
+    <!-- Star 1 -->
+    <rect x="720" y="44" width="3" height="3" fill="#FFD93D"/>
+    <rect x="717" y="47" width="9" height="3" fill="#FFD93D"/>
+    <rect x="720" y="50" width="3" height="3" fill="#FFD93D"/>
+    <!-- Star 2 -->
+    <rect x="760" y="70" width="2" height="2" fill="#FF6B9D"/>
+    <rect x="758" y="72" width="6" height="2" fill="#FF6B9D"/>
+    <rect x="760" y="74" width="2" height="2" fill="#FF6B9D"/>
+    <!-- Star 3 -->
+    <rect x="740" y="170" width="3" height="3" fill="#00E5FF"/>
+    <rect x="737" y="173" width="9" height="3" fill="#00E5FF"/>
+    <rect x="740" y="176" width="3" height="3" fill="#00E5FF"/>
+    <!-- Pixel dots -->
+    <rect x="780" y="100" width="2" height="2" fill="#39FF14"><animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/></rect>
+    <rect x="790" y="130" width="2" height="2" fill="#BD93F9"><animate attributeName="opacity" values="1;0;1" dur="3s" repeatCount="indefinite"/></rect>
+    <rect x="770" y="150" width="2" height="2" fill="#FFD93D"><animate attributeName="opacity" values="0;1;0" dur="2.5s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <!-- Bottom bar: retro device controls -->
+  <text x="425" y="253" text-anchor="middle" fill="#8B949E" font-family="ui-monospace, 'SF Mono', monospace" font-size="10" letter-spacing="3">
+    <tspan fill="#A3B1C6">&#9679;</tspan>
+    <tspan dx="4" fill="#7B8794">POWER</tspan>
+    <tspan dx="16" fill="#A3B1C6">&#9644;</tspan>
+    <tspan dx="4" fill="#7B8794">SELECT</tspan>
+    <tspan dx="16" fill="#A3B1C6">&#9644;</tspan>
+    <tspan dx="4" fill="#7B8794">START</tspan>
+  </text>
+
+  <!-- Outer border -->
+  <rect x="10" y="10" width="830" height="260" rx="20" fill="none" stroke="#CDD3DB" stroke-width="1"/>
+</svg>

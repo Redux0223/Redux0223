@@ -1,0 +1,30 @@
+<svg width="850" height="16" viewBox="0 0 850 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="g">
+      <feGaussianBlur stdDeviation="0.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Pixel art divider line -->
+  <g filter="url(#g)">
+    <!-- Left pixel pattern -->
+    <rect x="100" y="7" width="4" height="4" fill="#00E5FF" opacity="0.3"/>
+    <rect x="108" y="7" width="4" height="4" fill="#39FF14" opacity="0.4"/>
+    <rect x="116" y="7" width="4" height="4" fill="#FFD93D" opacity="0.5"/>
+    <!-- Center line -->
+    <rect x="126" y="8" width="598" height="2" fill="#E4E9F0"/>
+    <rect x="126" y="8" width="598" height="2" fill="url(#line-grad)" opacity="0.6"/>
+    <!-- Right pixel pattern -->
+    <rect x="730" y="7" width="4" height="4" fill="#FFD93D" opacity="0.5"/>
+    <rect x="738" y="7" width="4" height="4" fill="#39FF14" opacity="0.4"/>
+    <rect x="746" y="7" width="4" height="4" fill="#00E5FF" opacity="0.3"/>
+  </g>
+  <defs>
+    <linearGradient id="line-grad" x1="126" y1="0" x2="724" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="33%" stop-color="#39FF14"/>
+      <stop offset="66%" stop-color="#FFD93D"/>
+      <stop offset="100%" stop-color="#FF6B9D"/>
+    </linearGradient>
+  </defs>
+</svg>
